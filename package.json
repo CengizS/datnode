@@ -1,0 +1,30 @@
+{
+  "name": "datnode",
+  "version": "0.0.1",
+  "description": "Node module for connecting to DAT webservices",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CengizS/datnode.git"
+  },
+  "keywords": [
+    "dat",
+    "webservice",
+    "rest",
+    "calculation",
+    "evaluation",
+    "identification"
+  ],
+  "author": "Cengiz Sahin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CengizS/datnode/issues"
+  },
+  "homepage": "https://github.com/CengizS/datnode#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
