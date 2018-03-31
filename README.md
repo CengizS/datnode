@@ -1,2 +1,2 @@
-#DAT Node module
+DAT Node module
 
