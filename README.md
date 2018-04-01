@@ -1,6 +1,7 @@
-DAT Node module
+# DAT Node module
 
-You have to provide a <code>config.json</code> with thise content:
+## Hints
+You have to provide a file called <code>config.json</code> with thise content:
 <pre>
 {
     "locale": {
