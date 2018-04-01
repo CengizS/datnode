@@ -1,9 +1,10 @@
 "use strict";
+const config = require("./config.json");
 const datNode = require("./datnode");
-const selectionTarget = "https://www.dat.de/DATECodeSelection/rest/VehicleSelectionService";
-const identificationTarget = "https://www.dat.de/DATECodeSelection/rest/VehicleSelectionService";
-const conversionTarget = "https://www.dat.de/DATECodeSelectio/rest/ConversionFunctionsService";
-const imageryTarget = "https://www.dat.de/DATECodeSelectio/rest/VehicleImageryService";
+const selectionTarget = "https://" + config.environment + "/" + config.app + "/rest/VehicleSelectionService";
+const identificationTarget = "https://" + config.environment + "/" + config.app + "/rest/VehicleSelectionService";
+const conversionTarget = "https://" + config.environment + "/" + config.app + "/rest/ConversionFunctionsService";
+const imageryTarget = "https://" + config.environment + "/" + config.app + "/rest/VehicleImageryService";
 
 function getVehicleTypes(restriction, locale, cb, err) {
     var request = {

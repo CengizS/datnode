@@ -4,6 +4,8 @@
 You have to provide a file called <code>config.json</code> with thise content:
 <pre>
 {
+    "environment": "www.dat.de",
+    "app": the application to be used (refer to the DAT interface-compendium for valid apps,
     "locale": {
         "datCountryIndicator": ISO-3 countrycode,
         "country": ISO-3 countrycode,
