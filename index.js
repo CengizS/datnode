@@ -7,13 +7,14 @@ const locale = config.locale;
 identify.getVehicleTypes("ALL", locale, success, error);
 identify.getManufacturer(1, "ALL", locale, success, error);
 identify.getBaseModels(1, 130, "ALL", locale, success, error);
-identify.getSubModels(1, 130, 10, "ALL", locale, success, error);
+identify.getSubModels(1, 130, 85, "ALL", locale, success, error);
 
 function hr() {
     console.log("----------------------------------------------------------------------")
 }
 
-function success(result) {
+function success(result, request) {
+    console.log(JSON.stringify(request, null, 3));
     console.log(result);
     hr();
 }

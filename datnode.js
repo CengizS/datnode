@@ -10,7 +10,7 @@ function callStub(url, request, cb, err) {
             "request": request
         },
         function (result) {  // Success-handler
-            cb(result);
+            cb(result, request);
         },
         function (e) {       // Error-handler
             err(e);

@@ -7,14 +7,9 @@ const conversionTarget = "https://" + config.environment + "/" + config.app + "/
 const imageryTarget = "https://" + config.environment + "/" + config.app + "/rest/VehicleImageryService";
 
 function getVehicleTypes(restriction, locale, cb, err) {
-    var request = {
-        "locale": {
-            datCountryIndicator: locale.datCountryIndicator,
-            country: locale.country,
-            language: locale.language
-        },
-        "restriction": restriction
-    };
+    var request = {};
+    request.locale = locale;
+    request.restriction = restriction;
 
     datNode.callStub(
         selectionTarget + "/getVehicleTypes",
@@ -25,15 +20,10 @@ function getVehicleTypes(restriction, locale, cb, err) {
 }
 
 function getManufacturer(vt, restriction, locale, cb, err) {
-    var request = {
-        "locale": {
-            datCountryIndicator: locale.datCountryIndicator,
-            country: locale.country,
-            language: locale.language
-        },
-        "restriction": restriction,
-        "vehicleType": vt
-    };
+    var request = {};
+    request.locale = locale;
+    request.restriction = restriction;
+    request.vehicleType = vt;
 
     datNode.callStub(
         selectionTarget + "/getManufacturers",
@@ -44,16 +34,11 @@ function getManufacturer(vt, restriction, locale, cb, err) {
 }
 
 function getBaseModels(vt, manufacturer, restriction, locale, cb, err) {
-    var request = {
-        "locale": {
-            datCountryIndicator: locale.datCountryIndicator,
-            country: locale.country,
-            language: locale.language
-        },
-        "restriction": restriction,
-        "vehicleType": vt,
-        "manufacturer": manufacturer
-    };
+    var request = {};
+    request.locale = locale;
+    request.restriction = restriction;
+    request.vehicleType = vt;
+    request.manufacturer = manufacturer;
 
     datNode.callStub(
         selectionTarget + "/getBaseModels",
@@ -64,17 +49,12 @@ function getBaseModels(vt, manufacturer, restriction, locale, cb, err) {
 }
 
 function getSubModels(vt, manufacturer, bm, restriction, locale, cb, err) {
-    var request = {
-        "locale": {
-            datCountryIndicator: locale.datCountryIndicator,
-            country: locale.country,
-            language: locale.language
-        },
-        "restriction": restriction,
-        "vehicleType": vt,
-        "manufacturer": manufacturer,
-        "baseModel": bm
-    };
+    var request = {};
+    request.locale = locale;
+    request.restriction = restriction;
+    request.vehicleType = vt;
+    request.manufacturer = manufacturer;
+    request.baseModel = bm;
 
     datNode.callStub(
         selectionTarget + "/getSubModels",
