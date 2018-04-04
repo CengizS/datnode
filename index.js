@@ -8,6 +8,9 @@ identify.getVehicleTypes("ALL", locale, success, error);
 identify.getManufacturer(1, "ALL", locale, success, error);
 identify.getBaseModels(1, 130, "ALL", locale, success, error);
 identify.getSubModels(1, 130, 85, "ALL", locale, success, error);
+identify.getClassificationGroups(1, 130, 85, 1, "ALL", locale, success, error);
+identify.compileDATECode(1, 130, 85, 1, "ALL", locale, null, null, null, success, error);
+identify.getConstructionOptions(1, 40, 28, 2, "APPRAISAL", locale, [88100/*, 75205*/], null, null, success, error);
 
 function hr() {
     console.log("----------------------------------------------------------------------")
