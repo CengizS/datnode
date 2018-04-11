@@ -1,7 +1,7 @@
 # DAT Node module
 
 ## Hints
-You have to provide a file called <code>config.json</code> with thise content:
+You have to provide a file called <code>config.json</code> with this content:
 <pre>
 {
     "environment": "www.dat.de",
