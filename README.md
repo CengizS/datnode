@@ -18,3 +18,5 @@ You have to provide a file called <code>config.json</code> with this content:
     "interfacePartnerSignature": yourInterfacePartnerSignature
 }
 </pre>
+
+Please note that the used protocol will always be <b>HTTPS</b>!
